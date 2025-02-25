@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "593973724218",
+    "project_id": "healthcareappointment12",
+    "storage_bucket": "healthcareappointment12.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593973724218:android:fc976409afcae3befee103",
+        "android_client_info": {
+          "package_name": "com.example.healthcareappointment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFvE4xqCcGnlO8_v80IkOQqku1zVqVYq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
