@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Healthcare Appointment</string>
     <string name="exceptional_care_n_close_to_you">Exceptional Care\n Close to You</string>
+    <string name="explore">Explore</string>
 </resources>
