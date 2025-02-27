@@ -6,7 +6,11 @@ plugins {
 
 android {
     namespace = "com.example.healthcareappointment"
-    compileSdk = 34
+    compileSdk = 35
+    buildFeatures{
+        viewBinding=true
+    }
+
 
     defaultConfig {
         applicationId = "com.example.healthcareappointment"
@@ -26,6 +30,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -35,9 +40,7 @@ android {
         jvmTarget = "11"
     }
 
-        buildFeatures {
-            viewBinding; true
-        }
+
 
 
 }
