@@ -141,7 +141,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/viewCategory"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:clipToPadding="false"
                     android:paddingStart="16dp"
@@ -186,6 +186,7 @@
                     />
 
                 <TextView
+                    android:id="@+id/doctorListTxt"
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

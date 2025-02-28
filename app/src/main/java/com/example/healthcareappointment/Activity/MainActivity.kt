@@ -1,5 +1,6 @@
 package com.example.healthcareappointment.Activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -39,8 +40,14 @@ class MainActivity : BaseActivity() {
                 recyclerViewTopDoctor.adapter=TopDoctorAdapter(it)
                 progressBarTopDoctor.visibility=View.GONE
             })
+            viewModel.loadDoctors()
+            doctorListTxt.setOnClickListener{
+                startActivity(Intent(this@MainActivity,TopDoctorsActivity2::class.java))
+            }
         }
-        viewModel.loadDoctors()
+
+
+
     }
 
     private fun initCategory(){
