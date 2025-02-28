@@ -5,3 +5,4 @@ data class CategoryModel(
     val Name:String="",
     val Picture:String=""
 )
+
