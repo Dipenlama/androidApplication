@@ -15,7 +15,7 @@ class MainViewModel():ViewModel () {
     private val firebaseDatabase=FirebaseDatabase.getInstance()
 
     private val _category=MutableLiveData<MutableList<CategoryModel>>()
-    private val _doctors=MutableLiveData<MutableList<DoctorsModel>>()
+    public val _doctors=MutableLiveData<MutableList<DoctorsModel>>()
 
     val category:LiveData<MutableList<CategoryModel>> = _category
 
@@ -34,7 +34,7 @@ class MainViewModel():ViewModel () {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                println("Error loading categories: ${error.message}")
             }
 
 
@@ -42,7 +42,7 @@ class MainViewModel():ViewModel () {
     }
     fun loadDoctors(){
         val ref=firebaseDatabase.getReference("Doctors")
-        Ref.addValueEventListener(object :ValueEventListener {
+        ref.addValueEventListener(object :ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val lists= mutableListOf<DoctorsModel>()
 
@@ -57,7 +57,7 @@ class MainViewModel():ViewModel () {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                println("Error loading categories: ${error.message}")
             }
 
         })

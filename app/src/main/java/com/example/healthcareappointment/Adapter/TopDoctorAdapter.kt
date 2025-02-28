@@ -33,7 +33,7 @@ class TopDoctorAdapter(val items:MutableList<DoctorsModel>):RecyclerView.Adapter
         holder.binding.scoreTxt.text = items[position].Rating.toString()
         holder.binding.yearTxt.text = items[position].Experience.toString() + "year"
 
-        Glide.with(context)
+        Glide.with(holder.itemView.context)
             .load(items[position].Picture)
             .apply { RequestOptions().transform(CenterCrop()) }
             .into(holder.binding.img1)
